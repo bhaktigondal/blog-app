@@ -1,0 +1,28 @@
+.blog-card{
+    background-color: bisque;
+    padding: 10px;
+    margin: 10px auto;
+    width: 500px;
+    border-radius: 10px;
+}
+.blog-title{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: black;
+}
+.author-image{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.author-name{
+    font-size: 14px;
+    font-style: italic;
+}
+.author-card{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
