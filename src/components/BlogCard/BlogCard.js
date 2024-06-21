@@ -6,13 +6,20 @@ function BlogCard({ title, content, author, date, categories }) {
     <div className='blog-card'>
       
       <h2 className='blog-title'>{title}</h2>
-      <p className='blog-content-preview'>{content.substring(0,100)}...</p>
+      <p className='blog-content-preview'>{content.substring(0,150)}...</p>
+      
       <div className='author-card'>
         <img src={author.avatar} alt='author' className='author-image'/>
         <span className='author-name'>{author.name}</span>
       </div>
-      
+      <span className='blog-date'>{date}</span>
+      <div className='badge-container'>
+      {categories.map((category,i) =>{
+        return <span key={i} className='category-badge'>{category}</span>
+      })}
+      </div>
     </div>
+    
   )
 }
 
