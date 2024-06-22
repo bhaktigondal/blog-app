@@ -8,10 +8,11 @@ function Home() {
     <>
     <div className="blog-container">
       {blogs.map((blogObject, i) => {
-        const { title, content, author, date, categories } = blogObject;
+        const { id, title, content, author, date, categories } = blogObject;
         return (
           <BlogCard
             key={i}
+            id={id}
             title={title}
             content={content}
             author={author}

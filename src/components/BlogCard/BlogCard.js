@@ -2,9 +2,9 @@ import React from 'react'
 import "./Blogcard.css"
 import { Link } from 'react-router-dom'
 
-function BlogCard({ title, content, author, date, categories }) {
+function BlogCard({id, title, content, author, date, categories }) {
   return (
-    <Link className='blog-card'>
+    <Link className='blog-card' to={`/blog/${id}`}>
       
       <h2 className='blog-title'>{title}</h2>
       <p className='blog-content-preview'>{content.substring(0,150)}...</p>
