@@ -14,6 +14,7 @@ function BlogView() {
         <p className="blog-view-date">{selectedBlog.date}</p>
         <img src={selectedBlog.author.avatar} className="blogview-avatar"/>
         <p className="blog-view-content">{selectedBlog.content}</p>
+        
 
     </div>
   )
